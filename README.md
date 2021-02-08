@@ -1,7 +1,7 @@
 # NEOVIM
  This is my very personal neovim setup
  
- ![](/home/cabanesdev/Imágenes/screenshoot.png)
+ ![](/home/cabanesdev/Imágenes/screenshoot.png){width=300px}
  
 ## Install Neovim in Linux Ubuntu
 
