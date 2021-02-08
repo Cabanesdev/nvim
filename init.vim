@@ -12,7 +12,7 @@ call plug#end()
 " Configuración de plugins
 
 map <F2> :NERDTreeToggle<CR> 	"F2 to open the nerdtree
-let g:lightline = {						"Lightline theme
+let g:lightline = {
       \ 'colorscheme': 'onedark',
       \ }
 
