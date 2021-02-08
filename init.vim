@@ -4,8 +4,8 @@ call plug#begin('~/.config/nvim/plugins')
 
 Plug 'joshdick/onedark.vim'	" theme
 Plug 'scrooloose/nerdtree'	" explorador de archivos
-Plug 'mattn/emmet-vim'	" emmets for html
 Plug 'itchyny/Lightline.vim'	
+Plug 'neoclide/coc.nvim'
 
 call plug#end()
 
