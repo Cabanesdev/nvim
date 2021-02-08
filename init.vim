@@ -2,17 +2,17 @@
 
 call plug#begin('~/.config/nvim/plugins')
 
-Plug 'joshdick/onedark.vim'	" theme
-Plug 'scrooloose/nerdtree'	" explorador de archivos
-Plug 'itchyny/Lightline.vim'	
-Plug 'neoclide/coc.nvim'
+Plug 'joshdick/onedark.vim'		" theme
+Plug 'scrooloose/nerdtree'		" explorador de archivos
+Plug 'itchyny/Lightline.vim'	"	Lightline  
+Plug 'neoclide/coc.nvim'			" coc for autocompletion
 
 call plug#end()
 
 " Configuración de plugins
 
-map <F2> :NERDTreeToggle<CR>
-let g:lightline = {
+map <F2> :NERDTreeToggle<CR> 	"F2 to open the nerdtree
+let g:lightline = {						"Lightline theme
       \ 'colorscheme': 'onedark',
       \ }
 
