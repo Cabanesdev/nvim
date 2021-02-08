@@ -1,11 +1,7 @@
 # NEOVIM
  This is my very personal neovim setup
  
-![](~Imágenes/screenshoot.jpg "Neovim example")
-
-
-
-
+![](~Imágenes/screenshoot.jpg =1364x710)
 ## Install Neovim in Linux Ubuntu
 
 In the terminal
@@ -55,17 +51,3 @@ Once the plugins are added restart neovim and in command mode you have to type
 ~~~
 :PlugInstall
 ~~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
