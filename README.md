@@ -9,4 +9,6 @@ Sudo apt-get update
 Sudo apt-get install neovim
 ~~~
 
-To open neovim in terminal use the command ***nvim***
+To open neovim in terminal use the command `nvim`
+
+
