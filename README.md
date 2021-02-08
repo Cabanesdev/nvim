@@ -25,11 +25,13 @@ Inside the nvim folder you have to create the `init.vim` file and in that file w
 
 ### Installation
 
-### Step 1
+#### Step 1
 [Vim-Plug](https://github.com/junegunn/vim-plug) is used for module management so let's install it with the following command in terminal
 ~~~
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~~~
+
+#### Step 2
 
 To install the plugins you must create the `plugins` folder in the directory `~/.config/nvim`
 To add the plugins to neovim you must write to the init.vim
@@ -40,6 +42,13 @@ call plug#begin('~/.config/nvim/plugins')
 " here will go the plugins 
 
 call plug#end()
+~~~
+
+#### Step 3
+Once the plugins are added restart neovim and in command mode you have to type 
+
+~~~
+:PlugInstall
 ~~~
 
 
