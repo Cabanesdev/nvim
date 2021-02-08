@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/plugins')
 
 Plug 'joshdick/onedark.vim'		" theme
 Plug 'scrooloose/nerdtree'		" explorador de archivos
-Plug 'itchyny/Lightline.vim'	"	Lightline  
+Plug 'itchyny/Lightline.vim' 	"Lightline  
 Plug 'neoclide/coc.nvim'			" coc for autocompletion
 
 call plug#end()
