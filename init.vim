@@ -20,7 +20,7 @@ let g:lightline = {
 set title
 set relativenumber
 set mouse=a
-
+syntax on
 colorscheme onedark
 set cursorline
 set colorcolumn=120
