@@ -7,7 +7,6 @@ Plug 'scrooloose/nerdtree'		" explorador de archivos
 Plug 'itchyny/Lightline.vim' 	"Lightline  
 Plug 'neoclide/coc.nvim'			" coc for autocompletion
 Plug 'artur-shaik/vim-javacomplete2'
-Plug 'codota/tabnine-vim'
 
 call plug#end()
 
