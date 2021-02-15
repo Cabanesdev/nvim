@@ -2,13 +2,25 @@
 This is my very personal neovim setup
 ![](https://github.com/Cabanesdev/nvim/blob/main/images/screenshoot.png)
 
-## Install Neovim in Linux Ubuntu
+## Install Neovim in Linux
 
-In the terminal
+###Ubuntu/Debian
 
 ~~~
 Sudo apt-get update
 Sudo apt-get install neovim
+~~~
+
+### Arch-linux
+
+~~~
+sudo pacman -Sy neovim
+~~~
+
+### Fedora
+
+~~~
+sudo dnf install neovim
 ~~~
 
 To open neovim in terminal use the command `nvim`
