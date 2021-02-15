@@ -4,7 +4,7 @@ This is my very personal neovim setup
 
 ## Install Neovim in Linux
 
-###Ubuntu/Debian
+### Ubuntu/Debian
 
 ~~~
 Sudo apt-get update
