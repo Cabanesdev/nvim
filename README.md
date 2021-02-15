@@ -19,7 +19,7 @@ Inside the nvim folder you have to create the `init.vim` file and in that file w
 
 ## Plugins
 ### List
-- Theme: [one dark](https://github.com/joshdick/onedark.vim)
+- Theme: [monokai-pro](https://github.com/phanviet/vim-monokai-pro)
 - Status bar: [LightLine](https://github.com/itchyny/lightline.vim)
 - File Explorer: [nerdtree](https://github.com/scrooloose/nerdtree)
 - AutoCompletion: [coc](https://github.com/neoclide/coc.nvim)
