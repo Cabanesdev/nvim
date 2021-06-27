@@ -7,8 +7,7 @@ This is my very personal neovim setup
 ### Ubuntu/Debian
 
 ~~~
-Sudo apt-get update
-Sudo apt-get install neovim
+sudo apt-get update && sudo apt-get install neovim
 ~~~
 
 ### Arch-linux
