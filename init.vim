@@ -2,20 +2,44 @@
 
 call plug#begin('~/.config/nvim/plugins')
 
+" Theme
 Plug 'ayu-theme/ayu-vim'
-Plug 'scrooloose/nerdtree'		" explorador de archivos
-Plug 'itchyny/Lightline.vim' 	"Lightline  
-Plug 'neoclide/coc.nvim'			" coc for autocompletion
+
+" System explorer (nerdtree)
+Plug 'scrooloose/nerdtree'
+
+" LightLine
+Plug 'itchyny/Lightline.vim'
+
+" coc for tslinting, auto complete and prettier
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
+" coc extensions
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
+
+" by default, if you open tsx file, neovim does not show syntax colors
+" vim-tsx will do all the coloring for jsx in the .tsx file
+Plug 'ianks/vim-tsx'
+
+" by default, if you open tsx file, neovim does not show syntax colors
+" typescript-vim will do all the coloring for typescript keywords
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
-" Configuración de plugins
-" NERDTree
-map <F2> :NERDTreeToggle<CR> 	"F2 to open the nerdtree
 " Theme
 colorscheme ayu
 
-" Configuración
+" NERDTree
+map <F2> :NERDTreeToggle<CR> 	"F2 to open the nerdtree
+
+" identified as typescript react file, so add following
+au BufNewFile,BufRead *.ts setlocal filetype=typescript
+au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
+au BufNewFile,BufRead *.js setlocal filetype=javascript
+au BufNewFile,BufRead *.jsx setlocal filetype=javascript.jsx
+
+" config 
 set title
 set number
 set mouse=a
@@ -27,8 +51,7 @@ set hidden
 set ignorecase
 set termguicolors
 
-
-" Indent
+" Indent confing
 set noexpandtab
 set copyindent
 set preserveindent
