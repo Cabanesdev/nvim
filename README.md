@@ -33,16 +33,17 @@ Inside the nvim folder you have to create the `init.vim` file and in that file w
 ### List
 - Theme: [ayu](https://github.com/ayu-theme/ayu-vim)
 - Status bar: [LightLine](https://github.com/itchyny/lightline.vim)
+- Git integrations: [fugitive](https://github.com/tpope/vim-fugitive)
 - File Explorer: [nerdtree](https://github.com/scrooloose/nerdtree)
 - NerdTree git: [Nerdtree-git](https://github.com/Xuyuanp/nerdtree-git-plugin)
 - Icons: [DevIcons](https://github.com/ryanoasis/vim-devicons)
 - AutoCompletion: [coc](https://github.com/neoclide/coc.nvim)
-- 
 
 ### Installation
 
 #### Step 1
-[Vim-Plug](https://github.com/junegunn/vim-plug) is used for module management so let's install it with the following command in terminal
+[Vim-Plug](https://github.com/junegunn/vim-plug)  is a module manager, which is used to install plugins.
+To install it you have to run the following command in the terminal. 
 ~~~
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~~~
@@ -50,7 +51,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 #### Step 2
 
 To install the plugins you must create the `plugins` folder in the directory `~/.config/nvim`
-To add the plugins to neovim you must write to the init.vim
+To add plugins to neovim you must write to the init.vim
 
 ~~~
 call plug#begin('~/.config/nvim/plugins')
