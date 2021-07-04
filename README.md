@@ -31,10 +31,13 @@ Inside the nvim folder you have to create the `init.vim` file and in that file w
 
 ## Plugins
 ### List
-- Theme: [vim-monokai-tasty](https://github.com/patstockwell/vim-monokai-tasty)
+- Theme: [ayu](https://github.com/ayu-theme/ayu-vim)
 - Status bar: [LightLine](https://github.com/itchyny/lightline.vim)
 - File Explorer: [nerdtree](https://github.com/scrooloose/nerdtree)
+- NerdTree git: [Nerdtree-git](https://github.com/Xuyuanp/nerdtree-git-plugin)
+- Icons: [DevIcons](https://github.com/ryanoasis/vim-devicons)
 - AutoCompletion: [coc](https://github.com/neoclide/coc.nvim)
+- 
 
 ### Installation
 
