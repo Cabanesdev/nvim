@@ -1,6 +1,7 @@
 # NEOVIM
 This is my very personal neovim setup
-![](https://i.gyazo.com/51c880c3d5fde2a6e4096b4a6d12b9c9.png)
+![imagen](https://user-images.githubusercontent.com/71275841/124337574-9459d700-dba3-11eb-89a9-243ce4a13c4a.png)
+
 
 ## Install Neovim in Linux
 
