@@ -1,5 +1,5 @@
 # NEOVIM
-![imagen](https://user-images.githubusercontent.com/71275841/124337574-9459d700-dba3-11eb-89a9-243ce4a13c4a.png)
+![imagen](https://user-images.githubusercontent.com/71275841/124515536-fe5ec000-dddf-11eb-9668-6d1d179af6b0.png)
 
 if you want this configuration copy the following command in the terminal
 ~~~
