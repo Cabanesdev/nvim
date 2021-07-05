@@ -1,8 +1,10 @@
 # NEOVIM
-This is my very personal neovim setup
 ![imagen](https://user-images.githubusercontent.com/71275841/124337574-9459d700-dba3-11eb-89a9-243ce4a13c4a.png)
 
-
+if you want this configuration copy the following command in the terminal
+~~~
+git clone https://github.com/Cabanesdev/nvim.git ~/.config/nvim
+~~~
 ## Install Neovim in Linux
 
 ### Ubuntu/Debian
