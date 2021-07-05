@@ -1,4 +1,7 @@
-" Plugins
+" ===============================================================================================================================================
+" 																												PLUGINS INSTALLATION
+" ===============================================================================================================================================
+
 call plug#begin('~/.config/nvim/plugins')
 
 " Theme
@@ -28,15 +31,26 @@ Plug 'ianks/vim-tsx'
 " typescript-vim will do all the coloring for typescript keywords
 Plug 'leafgarland/typescript-vim'
 
-" Git Plugins
+" Git integration plugin
 Plug 'tpope/vim-fugitive'
+
+" File searcher
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
-" Theme
+" ===============================================================================================================================================
+" 																												PLUGINS CONFIGURATIONS
+" ===============================================================================================================================================
+
+" ===============================================================THEME===========================================================================
+
 colorscheme ayu
 
-" NERDTree
+" ===============================================================NERDTREE========================================================================
+
 map <F2> :NERDTreeToggle<CR> 	"F2 to open the nerdtree
 
 let g:NERDTreeGitStatusIndicatorMapCustom = {
@@ -52,21 +66,31 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
+" ===============================================================DEVICONS========================================================================
 
-" Icons
 set encoding=utf8
 set guifont=CaskaydiaCove\ Nerd\ Font*\ 11
 
-" identified as typescript react file, so add following
+" ===============================================================REACT CONFIGURATIONS============================================================
+
 au BufNewFile,BufRead *.ts setlocal filetype=typescript
 au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 au BufNewFile,BufRead *.js setlocal filetype=javascript
 au BufNewFile,BufRead *.jsx setlocal filetype=javascript.jsx
 
-" prettier
+" ===============================================================PRETTIER========================================================================
+
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-" config 
+" ===============================================================TELESCOPE=======================================================================
+
+command! -nargs=0 Ff :Telescope find_files Fg Fb Fh
+command! -nargs=0 Fg :Telescope live_grep
+command! -nargs=0 Fb :Telescope buffers
+command! -nargs=0 Fh :Telescope help_tags
+
+" ===============================================================GENERAL CONFIGURATIONS==========================================================
+
 set title
 set number
 set mouse=a
@@ -78,8 +102,6 @@ set spelllang=en,es
 set hidden
 set ignorecase
 set termguicolors
-
-" Indent confing
 set noexpandtab
 set copyindent
 set preserveindent
@@ -87,3 +109,5 @@ set softtabstop=0
 set shiftwidth=2
 set tabstop=2
 
+" ===============================================================KEYMAPS=========================================================================
+inoremap <silent><expr> <c-Space> coc#refresh()
