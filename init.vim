@@ -84,7 +84,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " ===============================================================TELESCOPE=======================================================================
 
-command! -nargs=0 Ff :Telescope find_files Fg Fb Fh
+command! -nargs=0 Ff :Telescope find_files
 command! -nargs=0 Fg :Telescope live_grep
 command! -nargs=0 Fb :Telescope buffers
 command! -nargs=0 Fh :Telescope help_tags
