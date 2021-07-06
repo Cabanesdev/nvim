@@ -5,7 +5,7 @@
 call plug#begin('~/.config/nvim/plugins')
 
 " Theme
-Plug 'ayu-theme/ayu-vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " System explorer (nerdtree)
 Plug 'preservim/nerdtree' |
@@ -47,7 +47,9 @@ call plug#end()
 
 " ===============================================================THEME===========================================================================
 
-colorscheme ayu
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'ocean-community'
+colorscheme material
 
 " ===============================================================NERDTREE========================================================================
 
