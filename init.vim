@@ -39,6 +39,12 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+" IndentLine
+Plug 'Yggdroot/indentLine'
+
+" Visualmulti
+Plug 'mg979/vim-visual-multi'
+
 call plug#end()
 
 " ===============================================================================================================================================
@@ -47,7 +53,6 @@ call plug#end()
 
 " ===============================================================THEME===========================================================================
 
-let g:material_terminal_italics = 1
 let g:material_theme_style = 'ocean-community'
 colorscheme material
 
@@ -90,11 +95,20 @@ command! -nargs=0 Ff :Telescope find_files
 command! -nargs=0 Fg :Telescope live_grep
 command! -nargs=0 Fb :Telescope buffers
 command! -nargs=0 Fh :Telescope help_tags
+command! -nargs=0 FB :Telescope file_browser
+
+" ===============================================================INDENTLINE======================================================================
+
+let g:indentLine_char = '¦'
+
+
+" ===============================================================TREESITTER======================================================================
 
 " ===============================================================GENERAL CONFIGURATIONS==========================================================
 
 set title
 set number
+set relativenumber
 set mouse=a
 set cursorline
 set colorcolumn=150
@@ -111,5 +125,7 @@ set softtabstop=0
 set shiftwidth=2
 set tabstop=2
 
+
 " ===============================================================KEYMAPS=========================================================================
+
 inoremap <silent><expr> <c-Space> coc#refresh()
