@@ -8,8 +8,8 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " System explorer (nerdtree)
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Icons
 Plug 'ryanoasis/vim-devicons'
@@ -45,6 +45,8 @@ Plug 'Yggdroot/indentLine'
 " Visualmulti
 Plug 'mg979/vim-visual-multi'
 
+Plug 'nvim-treesitter/nvim-treesitter'
+
 call plug#end()
 
 " ===============================================================================================================================================
@@ -75,8 +77,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 " ===============================================================DEVICONS========================================================================
 
-set encoding=utf8
-set guifont=CaskaydiaCove\ Nerd\ Font*\ 11
+set encoding=UTF-8
 
 " ===============================================================REACT CONFIGURATIONS============================================================
 
@@ -99,10 +100,11 @@ command! -nargs=0 FB :Telescope file_browser
 
 " ===============================================================INDENTLINE======================================================================
 
-let g:indentLine_char = '¦'
-
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ===============================================================TREESITTER======================================================================
+
+lua require 'nvim-treesitter.configs'.setup { highlight = { enable = true } } 
 
 " ===============================================================GENERAL CONFIGURATIONS==========================================================
 
